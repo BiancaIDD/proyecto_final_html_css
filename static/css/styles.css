@@ -149,12 +149,13 @@ input {
   padding: 30px;
 }
 
-@media screen and (max-width:650px){
+@media screen and (max-width:650px) {
   header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
   .information {
     display: flex;
     gap: 50px;
@@ -164,15 +165,16 @@ input {
     justify-content: center;
     flex-direction: column;
   }
+
   .dinosaur_box {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 20px;
-    grid-template-areas: 
-    "t-rex triceratops"
-    "velociraptor diplodocus"
-    "alosaurio bauri"
-    "spinosaurus .";
+    grid-template-areas:
+      "t-rex triceratops"
+      "velociraptor diplodocus"
+      "alosaurio bauri"
+      "spinosaurus .";
   }
 }
