@@ -8,10 +8,16 @@
     outline: 1px solid green;
   }
 
+  body{
+    background-color: #C6ECAE;
+  }
+
   header {
+    display: flex;
     font-family: 'prompt';
     text-align: right;
-    font-size: xx-large;
+    font-size: x-large;
+    justify-content: flex-start;
   }
 
 
