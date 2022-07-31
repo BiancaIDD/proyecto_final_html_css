@@ -1,0 +1,83 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Prompt:wght@200&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 1px solid green;
+  }
+
+  header {
+    font-family: 'prompt';
+    text-align: right;
+    font-size: xx-large;
+  }
+
+
+  main {
+    width: 100%;
+  }
+
+
+
+  .information {
+    display: flex;
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    align-items: flex-end;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+  }
+
+
+
+  .dinosaur_box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    grid-template-areas: "t-rex triceratops velociraptor diplodocus"
+    "alosaurio bauri spinosaurus form";
+  }
+
+  .dinosaur {
+    margin-block: 5px;
+    border: 1px solid black;
+    overflow: auto;
+    justify-content: flex-start;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    align-items: center;
+  }
+
+  .dinosaur_t-rex {
+    grid-area: t-rex;
+  }
+
+  .dinosaur_triceratops {
+    grid-area: triceratops;
+  }
+
+  .dinosaur_velociraptor {
+    grid-area: velociraptor;
+  }
+
+  .dinosaur_diplodocus {
+    grid-area: diplodocus;
+  }
+
+  .dinosaur_alosaurio {
+    grid-area: alosaurio;
+  }
+
+  .dinosaur_coelophysis_bauri {
+    grid-area: bauri;
+  }
+
+  .dinosaur_spinosaurus_aegyptiacus {
+    grid-area: spinosaurus;
+  }
