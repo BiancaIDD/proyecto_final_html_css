@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid green;
+
 }
 
 body {
@@ -63,6 +63,7 @@ main {
   align-items: center;
   flex-direction: column;
   gap: 25px;
+  border-radius: 16px;
 }
 
 li {
@@ -106,14 +107,44 @@ li {
   display: none;
 }
 
+h3::first-letter {
+  color: white;
+}
+
 .dinosaur:hover>.animation_dinosaur_p {
   display: block;
 }
 
 .dinosaur:hover {
   background-color: #7EB77F;
+  transition: all 0.3s ease-in-out;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .dinosaur:hover>.dinosaur_img {
   display: none;
+}
+
+li:hover {
+  color: #7A3B69;
+  background-color: #7CF0BD;
+  transform: translateY(-5px);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  font-size: x-large;
+  padding: 30px;
+  align-items: center;
+  gap: 30px;
+}
+
+input {
+  width: 100px;
+  height: 35px;
+  text-align: center;
+  padding: 30px;
 }
