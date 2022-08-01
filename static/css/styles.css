@@ -136,17 +136,49 @@ form {
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  font-size: x-large;
-  padding: 30px;
+  font-size: large;
+  padding: 20px;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
 }
 
 input {
-  width: 100px;
-  height: 35px;
+  width: 250px;
+  height: 25px;
   text-align: center;
-  padding: 30px;
+  padding: 15px;
+}
+
+button{
+  width: 100px;
+  height: 45px;
+}
+
+button:hover{
+  transition: all 0.3s ease-in-out;
+  background-color: #ADA0A6;
+  transform: translateX(5px);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.about{
+  display: flex;
+  flex-direction: column;
+  background-color: #1F1A38;
+  color: white;
+  font-size: medium;
+  text-align: center;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+footer{
+  color: white;
+  background-color: #BC8DA7;
+  font-size: medium;
+  text-align: center;
 }
 
 @media screen and (max-width:650px) {
